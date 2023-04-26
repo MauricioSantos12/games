@@ -1,0 +1,350 @@
+@import url('');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background-color: #e3f2fd;
+    padding: 0 10px;
+}
+
+/* Principal view  */
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2em;
+}
+
+.arrow-left {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.card {
+    padding: 2rem;
+    border-radius: 4px;
+    border: 3px solid black;
+    box-shadow: .5rem .5rem 0 black;
+    min-width: 300px;
+    max-width: 600px;
+    width: 60%;
+}
+
+.container--input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.container--input > label {
+    font-weight: 600;
+}
+
+.container--input > input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.general--menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container--button {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    padding: 15px;
+    font-size: 19px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 20px;
+  }
+
+.button-game {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 700;
+    color: black;
+    background-color: #F8CA05;
+    transition: all .3s;
+    border: 2px solid black;
+}
+
+.button-game:hover {
+    transform: scale(1.1);
+    background-color: white;
+}
+
+/* Triqui  */
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "a b c"
+    "d e f"
+    "g h i";
+  justify-content: center;
+  align-items: center;
+}
+
+.grid div {
+  height: 150px;
+  width: 150px;
+  font-size: 80px;
+  border: 1px solid black;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+/* Piano  */
+
+@import url('');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background-color: #e3f2fd;
+    padding: 0 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Piano  */
+
+.piano {
+    background-color: #141414;
+    border-radius: 20px;
+    padding: 35px 40px;
+}
+
+.piano .header--piano {
+    color: #b2b2b2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.header--piano h2 {
+    font-size: 1.6 rem;
+}
+
+.header--piano .column {
+    display: flex;
+    align-items: center;
+}
+
+.header--piano .column span {
+    font-weight: 500;
+    margin-left: 15px;
+    font-size: 1.19rem;
+}
+
+.volume-slider input {
+    accent-color: #fff;
+    outline: none;
+
+}
+
+.keys-checkbox input {
+    appearance: none;
+    outline: none;
+    width: 60px;
+    height: 30px;
+    background-color: #4b4b4b;
+    position: relative;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.keys-checkbox input::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 5px;
+    border-radius: inherit;
+    position: absolute;
+    background-color: #8c8c8c;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+.keys-checkbox input:checked::before {
+    left: 35px;
+    background-color: #fff;
+
+}
+
+.piano-keys {
+    display: flex;
+    margin-top: 40px;
+
+}
+
+.piano-keys .key {
+    cursor: pointer;
+    color: #a2a2a2;
+    list-style: none;
+    position: relative;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+
+.piano-keys .white {
+    width: 70px;
+    height: 230px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    background: linear-gradient(#fff 96%, #eee 4%);
+}
+
+.piano-keys .white.active {
+    box-shadow: inset -5px 5px 20px rgba(0,0,0,0.2);
+    background: linear-gradient(to bottom #fff0 0%, #eee 100%);
+}
+
+.piano-keys .black.active {
+    box-shadow: inset -5px 5px 10px rgba(255,255,255,0.1);
+    background: linear-gradient(to bottom #000 0%, #434343);
+}
+
+.piano-keys .black  {
+    margin: 0 -22px 0 -22px;
+    z-index: 2;
+    width: 44px;
+    height: 140px;
+    border-radius: 8px;
+    background: linear-gradient(#333, #000);
+}
+
+.piano-keys span {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    font-size: 1.13rem;
+    text-align: center;
+}
+
+.piano-keys .key.hide span {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 815px){
+    .wrapper {
+        padding: 25px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    header :where(h2, .column){
+        margin-bottom: 13px;
+    }
+
+    .volume-slider input {
+        max-width: 100px;
+    }
+
+    .piano-keys {
+        margin-top: 20px;
+    }
+
+    .piano-keys .key:where(:nth-child(9), :nth-child(10)){
+        display: none;
+    }
+
+    .piano-keys .black {
+        height: 100px;
+        width: 40px;
+        margin: 0 -20px 0 -20px;
+    }
+
+    .piano-keys .white {
+        height: 180px;
+        width: 60px;
+    }
+}
+
+
+@media screen and (max-width: 615px){
+    .piano-keys .key:nth-child(13),
+    .piano-keys .key:nth-child(14),
+    .piano-keys .key:nth-child(15),
+    .piano-keys .key:nth-child(16),
+    .piano-keys .key:nth-child(17) {
+        display: none;
+    }
+    .piano-keys .white {
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .piano-keys .white {
+        width: 40px;
+    }
+}
