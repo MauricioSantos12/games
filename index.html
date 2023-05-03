@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Game Educamás</title>
     <script src="https://kit.fontawesome.com/f7022e7867.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="assets/images/logo.ico" />
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
@@ -42,19 +43,15 @@
         </div> 
         <div class="flexbox">
           <h2 class="game-notification"></h2>
-          <button class="button-game" onclick="reset()">Reset</button>
+          <button class="button-game"  onclick="reset()">Reset</button>
         </div> 
       </div>
 
     <!-- Piano  -->
     <div class="piano">
       <div class="header--piano">
-        <h2>Piano</h2>
         <div class="column volume-slider">
-            <span>Volume</span> <input type="range" min="0" max="1" value="0.5" step="any">
-        </div>
-        <div class="column keys-checkbox">
-            <span>Show Keys</span> <input type="checkbox">
+            <span>Volumen </span> <input type="range" min="0" max="1" value="0.5" step="any">
         </div>
       </div>
       <ul class="piano-keys">
@@ -77,6 +74,12 @@
         <li class="key white" data-key="ñ"><span>ñ</span></li>
       </ul>
     </div>
+
+    <img src="assets/images/programate_white.png" alt="image programate white" class="image_center">
+    <img src="assets/images/programate_white.png" alt="image programate white" class="image_bottom">
+
+    <div class="cursor small"></div>
+
     <script src="./index.js"></script>
   </body>
 </html>
