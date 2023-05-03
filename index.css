@@ -282,7 +282,7 @@ header h1 {
     height: auto;
     position: absolute;
     bottom: 42%;
-    filter: blur(1px);
+    /* filter: blur(1px); */
     z-index: 1;
 }
 
