@@ -133,9 +133,7 @@ header h1 {
 
 .grid {
     display: grid;
-    /* grid-template-columns: repeat(4, 1fr); */
     grid-template-columns: repeat(3, 1fr);
-    /* grid-template-rows: repeat(4, 1fr); */
     grid-template-rows: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
@@ -220,7 +218,6 @@ header h1 {
 .piano-keys {
     display: flex;
     flex-direction: row;
-    /* flex-direction: column; */
     margin-top: 40px;
 }
 
@@ -282,7 +279,6 @@ header h1 {
     height: auto;
     position: absolute;
     bottom: 42%;
-    /* filter: blur(1px); */
     z-index: 1;
 }
 
